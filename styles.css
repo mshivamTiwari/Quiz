@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #e0f7fa;
+}
+
+/* Container for the quiz */
+.container, .game-container {
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: #006064;
+    font-family: 'Courier New', monospace;
+}
+
+/* Play button on the start page */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: #00838f;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Courier New', monospace;
+}
+
+.btn:hover {
+    background-color: #004d40;
+}
+
+/* Quiz game container styles */
+.game-container {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 18px;
+    color: #006064;
+}
+.hud-main-text{
+    text-align: center;
+}
+
+#question {
+    font-size: 24px;
+    color: #004d40;
+    margin-bottom: 20px;
+}
+
+/* Choice container styles */
+.choice-container {
+    margin: 10px 0;
+}
+
+
+.choice-btn { /* Style for the button itself */
+    background-color: #00838f;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Take full width of container */
+    border: none; /* Remove default button border */
+    text-align: left; /* Align text to left */
+}
+
+.choice-text { /* Style the text inside the button */
+    display: block; /* Ensure the text fills the button */
+}
+
+.choice-btn:hover {
+    background-color: #004d40;
+}
+
+/* Styles for correct and incorrect answers */
+.correct {
+    background-color: #43a047 !important; /* Green for correct */
+    color: white !important; /* Ensure white text on green */
+}
+
+.incorrect {
+    background-color: #e53935 !important; /* Red for incorrect */
+    color: white !important; /* Ensure white text on red */
+}
+/* Styles for the end page */
+#finalScore {
+    font-size: 24px;
+    color: #004d40;
+}
+
+.container .btn {
+    margin: 10px 0;
+}

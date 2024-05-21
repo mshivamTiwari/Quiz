@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz End</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Quiz Completed!</h1>
+    <h2>Your Score: <span id="finalScore">0</span></h2>
+    <button class="btn" id="playAgainBtn">Play Again</button>
+    <button class="btn" id="homeBtn">Home</button>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const finalScore = localStorage.getItem('mostRecentScore');
+        document.getElementById('finalScore').innerText = finalScore;
+
+        document.getElementById('playAgainBtn').addEventListener('click', () => {
+            window.location.assign('choices.html');
+        });
+
+        document.getElementById('homeBtn').addEventListener('click', () => {
+            window.location.assign('index.html');
+        });
+    });
+</script>
+</body>
+</html>
